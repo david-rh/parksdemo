@@ -11,13 +11,13 @@ $ oc login https://yourOpenShiftServer
 $ oc new-project nationalparks
 ````
 If your environment (all-in-one) has Wildfly, use this:
-`````
-$ oc create -f https://gitlab.com/jorgemoralespou/openshift3nationalparks/raw/master/nationalparks-template-wildfly.json
+````
+$ oc create -f https://gitlab.com/david-rh/parksdemo/raw/master/nationalparks-template-wildfly.json
 $ oc new-app nationalparks-wildfly
-`````
+````
 If your environment (Online 3, Dedicated, OSE) has EAP, use this:
-`````
-$ oc create -f https://gitlab.com/jorgemoralespou/openshift3nationalparks/raw/master/nationalparks-template-eap.json
+````
+$ oc create -f https://gitlab.com/david-rh/parksdemo/raw/master/nationalparks-template-eap.json
 $ oc new-app nationalparks-eap
 ````
 ## Install template as cluster-admin for everyone to use
@@ -25,6 +25,6 @@ $ oc new-app nationalparks-eap
 Load the template with cluster-admin user:
 
 ````
-# oc create -f https://gitlab.com/jorgemoralespou/openshift3nationalparks/raw/master/nationalparks-template-wildfly.json -n openshift
+# oc create -f https://gitlab.com/david-rh/parksdemo/raw/master/nationalparks-template-wildfly.json -n openshift
 ````
 
